@@ -1,0 +1,7 @@
+start: state1
+accept: state2
+tape: a, a, a, b, b, c 
+
+$ (state1,  a) = (state1, a, R)
+$ (state1, b)  = (state2, b, R)
+$ (state2, a)  = (state4, a, L)
